@@ -1,3 +1,6 @@
+# This is a fork of the Arduino-LMIC library with small changes for Adafruit feather m0 LoRa to work with The Things Network
+
+
 Arduino-LMIC library
 ====================
 This repository contains the IBM LMIC (LoraMAC-in-C) library, slightly
