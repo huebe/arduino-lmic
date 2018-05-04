@@ -1,6 +1,7 @@
 #ifndef _lmic_config_h_
 #define _lmic_config_h_
 
+/*
 // In the original LMIC code, these config values were defined on the
 // gcc commandline. Since Arduino does not allow easily modifying the
 // compiler commandline, use this file instead.
@@ -79,5 +80,23 @@
 // byte-oriented ones, making it use a lot less flash space (but it is
 // also about twice as slow as the original).
 #define USE_IDEETRON_AES
+*/
+
+#define CFG_eu868 1
+ 
+#define CFG_sx1276_radio 1
+ 
+#define US_PER_OSTICK_EXPONENT 4
+ 
+#define US_PER_OSTICK (1 << US_PER_OSTICK_EXPONENT)
+ 
+#define OSTICKS_PER_SEC (1000000 / US_PER_OSTICK)
+ 
+#define LMIC_DEBUG_LEVEL 0
+ 
+#define LMIC_FAILURE_TO Serial
+ 
+#define USE_IDEETRON_AES
+
 
 #endif // _lmic_config_h_
